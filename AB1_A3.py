@@ -55,6 +55,9 @@ threshold=2
 def neuron(X):
     net=np.zeros(X.shape[:1])    
     W=[-0.3,1]
+    #W=[-0.2,1]
+    #W=[-0.1,1]
+    #W=[0,1]    
     M1=X[:,0:1]
     M2=X[:,1:2]
     for i in range(net.shape[0]):
@@ -63,6 +66,7 @@ def neuron(X):
     
 result=neuron(X)    
 
+final=result>=threshold
         
      
      
