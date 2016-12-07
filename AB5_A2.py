@@ -67,7 +67,7 @@ sess = tf.InteractiveSession()
 
 # Train
 tf.initialize_all_variables().run()
-for step in range(1000):
+for step in range(5000):
     batch_xs, batch_ys = mnist.train.next_batch(100)
     sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})
     if step % 20 == 0:
